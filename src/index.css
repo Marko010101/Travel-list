@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
+/* 
+Primary: #3498db (Medium Blue)
+Accent 1: #85c1e9 (Light Sky Blue)
+Accent 2: #ecf0f1 (Light Grayish Blue)
+Accent 3: #1f618d (Dark Blue)
+
+Primary: #2980b9 (Deep Blue)
+Accent 1: #a9cce3 (Light Blue)
+Accent 2: #2e86c1 (Rich Blue)
+Accent 3: #bfc9ca (Silver Blue)
+
+Primary: #4a90e2 (Dodger Blue)
+Accent 1: #aed6f1 (Baby Blue)
+Accent 2: #81cfe0 (Sky Blue)
+Accent 3: #34495e (Dark Slate Blue)
+
+Soft Yellow (#fff68f):
+Mint Green (#a1e58c):
+Peach or Coral (#ffcc99):
+                #e5771f
+                #76c7ad
+
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -27,18 +51,18 @@ body {
 
 h1 {
   text-align: center;
-  background-color: #f4a226;
+  background-color: #7fbfe9;
   font-family: "Monoton";
   font-size: 8rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   word-spacing: 30px;
-  letter-spacing: -5px;
+  letter-spacing: 2px;
   padding: 2.4rem 0;
 }
 
 .add-form {
-  background-color: #e5771f;
+  background-color: #3498db;
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
@@ -54,7 +78,7 @@ h3 {
 button,
 select,
 input {
-  background-color: #ffebb3;
+  background-color: #ecf0f1;
   color: #5a3e2b;
   font-family: inherit;
   border: none;
@@ -67,12 +91,12 @@ input {
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #76c7ad;
+  background-color: #a1e58c;
 }
 
 .list {
-  background-color: #5a3e2b;
-  color: #ffebb3;
+  background-color: #3d78bb;
+  color: #e2eff2;
   padding: 4rem 0;
 
   display: flex;
@@ -114,7 +138,7 @@ input {
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;
-  accent-color: #e5771f;
+  accent-color: #a1e58c;
 }
 
 .list li button {
@@ -127,8 +151,13 @@ input[type="checkbox"] {
 }
 
 .stats {
-  background-color: #76c7ad;
+  background-color: #ffb974;
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+  transition: all 0.3s;
+}
+.done {
+  background-color: #a1e58c;
+  transition: all 0.3s;
 }

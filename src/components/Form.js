@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Form({ onAddItems }) {
   const [description, setDescription] = useState("");
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(1); // Set initial state to a number
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -14,7 +14,7 @@ export default function Form({ onAddItems }) {
     onAddItems(newItem);
 
     setDescription("");
-    setQuantity("");
+    setQuantity(1); // Set back to a number
   }
 
   return (

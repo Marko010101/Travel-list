@@ -11,12 +11,12 @@ export default function Stats({ items }) {
   const percentage = Math.round((numPacked / numItems) * 100);
 
   return (
-    <footer className="stats">
+    <footer className={percentage === 100 ? "stats done" : "stats"}>
       {percentage === 100 ? (
         <em>You got everything! Ready to go 👋 ✈️</em>
       ) : (
         <em>
-          💼 You have {numItems} items on your list, and you alredy packed{" "}
+          💼 You have {numItems} items on your list, and you already packed{" "}
           {numPacked} ({!isNaN(percentage) ? percentage : 0}%)
         </em>
       )}
